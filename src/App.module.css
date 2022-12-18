@@ -1,0 +1,64 @@
+.form {
+    width: 50%;
+    margin: -2rem auto 3rem;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.form input {
+    padding: 1rem;
+    width: 100%;
+    border-radius: 8px;
+    border: 0;
+    background-color: var(--gray-500);
+    color: var(--gray-300);
+}
+
+.form button {
+    padding: 1rem;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    color: var(--gray-100);
+    background-color: var(--blue-dark);
+    border: 0;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.form button:hover {
+    background-color: var(--blue);
+}
+
+.container {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.headerTasks {
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerTasks .tasksCreated strong, .headerTasks .tasksConcluded strong {
+    font-size: 0.875rem;
+    color: var(--blue);
+    font-weight: bold;
+    margin-right: 0.5rem;
+}
+
+.headerTasks .tasksCreated span, .headerTasks .tasksConcluded span {
+    font-size: 0.75rem;
+    padding: 2px 8px;
+    background-color: var(--gray-400);
+    border-radius: 8px;
+}
+
+.headerTasks .tasksConcluded strong {
+    color: var(--purple);
+}
+
+.tasksList {
+    margin-top: 1.5rem;
+}

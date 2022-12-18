@@ -1,0 +1,16 @@
+.empty {
+    margin-top: 2rem;
+    border-top: 1px solid var(--gray-400);
+}
+
+.empty svg {
+    margin: 4rem auto 1rem;
+    color: var(--gray-400);
+    display: block;
+}
+
+.empty strong, .empty p {
+    line-height: 1.6;
+    display: block;
+    text-align: center;
+}

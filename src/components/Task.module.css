@@ -1,0 +1,85 @@
+.task {
+    padding: 1rem;
+    background-color: var(--gray-500);
+    border-radius: 8px;
+    border: 1px solid var(--gray-400);
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 0rem 0rem 1.5rem;
+}
+
+.taskInfo {
+    display: flex;
+    align-items: center;
+}
+
+.containerLabel{
+    display: block;
+    position: relative;
+    padding-left: 20px;
+    font-size: 12px;
+    color: #424242;
+    font-weight: 400;
+  
+  }
+  
+.containerLabel input {
+    position: absolute;
+    opacity: 0;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: -12px;
+    left: 0;
+    height: 24px;
+    width: 24px;
+    background-color: transparent;
+    border: 1px solid var(--blue);
+    border-radius: 50%;
+}
+
+.containerLabel input:checked ~ .checkmark {
+    background-color: var(--purple-dark);
+    border: none;
+}
+
+.checkmark::after {
+    display: none;
+    content: '';
+    position: absolute;
+}
+   
+.containerLabel .checkmark::after {
+    content: '';
+    left: 8px;
+    top: 5px;
+    width: 4px;
+    height: 8px;
+    transform: rotate(45deg);
+    border-right: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+}
+  
+.containerLabel input:checked ~ .checkmark::after {
+    display: block;
+}
+
+.todo {
+    padding: 0rem 1rem;
+    display: block;
+    color: var(--gray-100);
+    font-size: 0.875rem;
+    line-height: 1.6;
+}
+
+.concluded {
+    padding: 0rem 1rem;
+    display: block;
+    font-size: 0.875rem;
+    text-decoration: line-through;
+    line-height: 1.6;
+}
